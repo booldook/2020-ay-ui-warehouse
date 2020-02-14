@@ -1,0 +1,30 @@
+/* Common */
+
+
+/* Header */
+.header {padding: 1rem;}
+.navi-wrap {display: flex; border: 1px solid red; position: relative;}
+.navi { cursor: pointer;}
+.navi > :nth-child(1) {padding: 0.75rem 1rem;}
+.sub-wrap {width: 100%; height: 400px; background-color: aquamarine; position: absolute; left: 0; display: flex; top: 100px;}
+.navi-wrap > :nth-child(1) > .sub-wrap {background-color: bisque;}
+.navi-wrap > :nth-child(2) > .sub-wrap {background-color: #73db42;}
+.navi-wrap > :nth-child(3) > .sub-wrap {background-color: #5395eb;}
+/* Main */
+
+
+/* Footer */
+
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
