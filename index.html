@@ -67,6 +67,26 @@
 			</h1>
 		</div>
 	</main>
+	<div class="map_wrap" style="width:80%; margin: 100px auto; height:400px; position: relative;">
+		<div id="map" style="width: 100%; height: 100%; position:relative;overflow:hidden;"></div>
+		<!-- 지도타입 컨트롤 div 입니다 -->
+		<div class="custom_typecontrol radius_border">
+				<span id="btnRoadmap" class="selected_btn" onclick="setMapType('roadmap')">지도</span>
+				<span id="btnSkyview" class="btn" onclick="setMapType('skyview')">스카이뷰</span>
+		</div>
+		<!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+		<div class="custom_zoomcontrol radius_border"> 
+				<span onclick="zoomIn()">
+					<div class="fa fa-plus"></div>
+				</span>  
+				<span onclick="zoomOut()">
+					<div class="fa fa-minus"></div>
+				</span>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=36442237d85180cf58bcd70fc9d65d8f&libraries=LIBRARY"></script>
+
 	<script src="./js/index.js"></script>
 </body>
 </html>

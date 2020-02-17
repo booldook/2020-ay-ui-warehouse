@@ -17,6 +17,19 @@
 .font-wrap > :last-child {display: flex; line-height: 6rem;}
 .font-wrap > :last-child > div {opacity: 0; animation-fill-mode: forwards;}
 
+/* 카카오지도 */
+.radius_border{border:1px solid #919191;border-radius:5px;}     
+.custom_typecontrol {position:absolute;top:10px;right:10px;overflow:hidden;width:130px;height:30px;margin:0;padding:0;z-index:1;font-size:12px; display: flex; align-items: flex-start;}
+.custom_typecontrol span {flex: 50% 0 0; text-align:center; line-height:30px;cursor:pointer; font-size: 12px; padding: 0;}
+.custom_typecontrol .btn {background:#fff;background:linear-gradient(#fff,  #e6e6e6);}       
+.custom_typecontrol .btn:hover {background:#f5f5f5;background:linear-gradient(#f5f5f5,#e3e3e3);}
+.custom_typecontrol .btn:active {background:#e6e6e6;background:linear-gradient(#e6e6e6, #fff);}    
+.custom_typecontrol .selected_btn {color:#fff;background:#425470;background:linear-gradient(#425470, #5b6d8a);}
+.custom_typecontrol .selected_btn:hover {color:#fff;}   
+.custom_zoomcontrol {position:absolute;top:50px;right:10px;width:36px;height:80px;overflow:hidden;z-index:1;background-color:#f5f5f5;} 
+.custom_zoomcontrol span {display:block;width:36px;height:40px;text-align:center;cursor:pointer; line-height: 40px;}               
+.custom_zoomcontrol span:first-child{border-bottom:1px solid #bfbfbf;} 
+
 /* Animation */
 @keyframes leftFadeIn {
 	0% {transform: translateX(-50px); opacity: 0;}
