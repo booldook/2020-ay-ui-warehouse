@@ -1,3 +1,4 @@
+new WOW({offset: 200}).init();
 $(".navi").mouseenter(function(){
 	$(this).find(".sub-wrap").css({"opacity": 0, "display": "flex"});
 	$(this).find(".sub-wrap").stop().animate({"opacity": 1, "top": "40px"}, 500);

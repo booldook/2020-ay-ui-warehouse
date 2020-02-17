@@ -11,9 +11,17 @@
 .navi-wrap > :nth-child(2) > .sub-wrap {background-color: #73db42;}
 .navi-wrap > :nth-child(3) > .sub-wrap {background-color: #5395eb;}
 /* Main */
+.font-wrap {max-width: 900px; margin: auto;}
+.leftFadeIn {animation-name: leftFadeIn; animation-duration: 1s;}
+.font-wrap h1, div {line-height: 6rem;}
+.font-wrap > :last-child {display: flex; line-height: 6rem;}
+.font-wrap > :last-child > div {opacity: 0; animation-fill-mode: forwards;}
 
-
-/* Footer */
+/* Animation */
+@keyframes leftFadeIn {
+	0% {transform: translateX(-50px); opacity: 0;}
+	100% {transform: translateX(0); opacity: 1;}
+}
 
 
 /* Responsive */
