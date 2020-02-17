@@ -1,19 +1,20 @@
 /* .prd를 변수에 넣기 */
-var $prd = $(".prd");
-var last = $prd.length - 1; //10 (11개 그림의 마지막 Index)
+var prd = $(".prd");
+var last = prd.length - 1; //10 (11개 그림의 마지막 Index)
 
 /* 초기화 */
 var now = last;
 var dir = "P"; // P => target: 0, L => -50%
 init();
 function init() {
-	$(".prd").remove();
+	$(".prd-wrap").empty();
 	$(".prd-wrap").css({"left": "-25%"});
-	for(var i=now, k; i<now+6; i++) {
-		if(i > last) k = i - last - 1;
-		else k = i;
-		$(".prd-wrap").append($prd[k]);
+	for(var i=0, k=now; i<6; i++) {
+		$(".prd-wrap").append($(prd[k]).clone());
+		if(k == last) k = 0;
+		else k++;
 	}
+	console.log('-------------');
 }
 
 function ani() {
