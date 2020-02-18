@@ -1,3 +1,6 @@
+// https://news.ycombinator.com/news
+// https://api.hnpwa.com/v0/news/1.json
+
 /* 통신에러 체크 */
 function onErr(err) {
 	console.log(err);
