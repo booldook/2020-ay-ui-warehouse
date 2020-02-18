@@ -1,6 +1,6 @@
 .wrapper {max-width: 700px; margin: 100px auto;}
 .prd-stage {width: 100%; position: relative; border: 1px solid red;}
-.prd-wrap {width: 100%; position: relative; display: flex; border: 10px solid blue;}
+.prd-wrap {width: 100%; position: relative; display: flex;}
 .prd {flex-basis: 25%; flex-grow: 0; flex-shrink: 0; border: 1px solid green;}
 
 .bts {margin: 20px auto; justify-content: center; display: flex;}
